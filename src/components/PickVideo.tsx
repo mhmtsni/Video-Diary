@@ -3,7 +3,7 @@ import * as DocumentPicker from "expo-document-picker";
 import { router } from "expo-router";
 import { useSelectedVideoStore } from "../store/videoStore";
 
-export default function Video() {
+export default function PickVideo() {
   const { setSelectedVideo } = useSelectedVideoStore();
 
   const pickVideo = async () => {
@@ -15,6 +15,7 @@ export default function Video() {
       if (result.canceled) return;
 
       const [newVideo] = await Promise.all(
+        
         result.assets.map(async (asset) => {
           return {
             uri: asset.uri,
@@ -28,8 +29,8 @@ export default function Video() {
 
   return (
     <View style={styles.container}>
-      <TouchableOpacity onPress={pickVideo}>
-        <Text>Pick videos</Text>
+      <TouchableOpacity style={{backgroundColor: "transparent", paddingInline: 10, borderWidth: 2, borderRadius: 20}} onPress={pickVideo}>
+        <Text style={{fontSize: 14, fontWeight: "bold"}}>Pick A Video</Text>
       </TouchableOpacity>
     </View>
   );

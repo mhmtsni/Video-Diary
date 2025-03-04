@@ -9,10 +9,8 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "infoPlist": {
-        "NSPhotoLibraryUsageDescription": "We need access to your photos to save videos."
-      },
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mhmtsni110.videoDiaryApp"
     },
     "android": {
       "permissions": [
@@ -22,7 +20,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.mhmtsni110.videoDiaryApp"
     },
     "web": {
       "bundler": "metro",
@@ -50,9 +49,8 @@
         "origin": false
       },
       "eas": {
-        "projectId": "65f2152c-8820-4756-af5c-cc0328663088"
+        "projectId": "d0bde1f5-ae1f-4ba7-8e5d-6f8d6a54f275"
       }
-    },
-    "owner": "mhmtsni"
+    }
   }
 }
