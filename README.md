@@ -39,5 +39,3 @@ npx expo run:ios
 ## Additional Notes
 - If you encounter issues, ensure that Expo and your dependencies are up to date.
 - If the Android build fails, check that Android Studio is properly set up with the necessary SDKs.
-
->>>>>>> 89cc0b6f0a6989df65c9569ed1b154202dd8a448
