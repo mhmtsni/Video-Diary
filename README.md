@@ -1,4 +1,3 @@
-=======
 # Expo Prebuild Project
 
 This project is built using [Expo Prebuild](https://docs.expo.dev/workflow/prebuild/) to generate native code.
