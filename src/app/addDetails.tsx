@@ -49,8 +49,10 @@ const AddDetails = () => {
         duration,
         outputUri
       );
+      
       const thumbnailResponse = await generateThumbnail(trimmedVideoUri);
       try {
+        // Adding the video to media library to access it later from the phone
         const asset = await MediaLibrary.createAssetAsync(trimmedVideoUri);
         const album = await MediaLibrary.getAlbumAsync("Movies");
 

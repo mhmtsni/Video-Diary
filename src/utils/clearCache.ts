@@ -1,5 +1,6 @@
 import * as FileSystem from "expo-file-system"
 
+// Clearing the cache to reduce redundant videos
 export async function clearVideoCache() {
     try {
       const cacheDir = FileSystem.cacheDirectory;

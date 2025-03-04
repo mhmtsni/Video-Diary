@@ -6,6 +6,7 @@ import * as MediaLibrary from "expo-media-library";
 import { Alert } from "react-native";
 import { clearVideoCache } from "../utils/clearCache";
 
+
 export interface Video {
   id: string;
   uri: string;
@@ -14,7 +15,7 @@ export interface Video {
   thumbnailImg: string;
   thumbnailAspect: number;
 }
-
+// Videos in the home screen
 interface VideoStore {
   videos: Video[];
   addVideo: (video: Omit<Video, "id">) => void;
@@ -29,7 +30,7 @@ interface VideoStore {
 interface SelectedVideo {
   uri: string | null;
 }
-
+// State for managing the videoView
 interface SelectedVideoStore {
   selectedVideo: SelectedVideo;
   setSelectedVideo: (uri: string | null) => void;

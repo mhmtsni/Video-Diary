@@ -18,7 +18,7 @@ const VideoEdit = () => {
 
   const playerRef = useRef<VideoView>(null);
   const animationFrameRef = useRef<number | null>(null);
-
+  // Synchronizing the video and the slider through the animation frame
   const updateCurrentTime = useCallback(() => {
     if (player) {
       setStartTime(player.currentTime);

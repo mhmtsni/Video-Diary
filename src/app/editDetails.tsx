@@ -6,6 +6,7 @@ import {
   Video,
 } from "../store/videoStore";
 import Form from "../components/Form";
+import { router } from "expo-router";
 
 const editDetails = () => {
   const { selectedVideo, setSelectedVideo } = useSelectedVideoStore();
@@ -19,6 +20,8 @@ const editDetails = () => {
   const handleSubmit = (name: string, description: string) => {
     if (video) {
         editVideo(video.id, {name, description})
+        setSelectedVideo(null)
+        router.back()
     }
   };
   if (!video) {
